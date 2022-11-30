@@ -2,7 +2,10 @@
     "version":2,
     "build":
         {
-            "buildCommand": "next build"
+            "number":"1",
+            "date":"2016-01-01T00:00:00.000Z",
+            "branch":"master",
+            "commit":"1234567890"
           }
     ,
     "routes":[{
