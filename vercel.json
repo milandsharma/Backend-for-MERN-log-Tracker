@@ -1,12 +1,15 @@
 {
     "version":2,
-    "build":{
-    "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": { "distDir": "collection" }
-    },
-    "routes":[{
+    "builds":[
+        {
+        "src":"./app.js",
+        "use":"@vercel/node"
+     }
+    ],
+    "routes":[
+        {
         "src":"/(.*)",
-        "dest":"/app.js"
-    }]
+        "dest":"/"
+    }
+]
 }
